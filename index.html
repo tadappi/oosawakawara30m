@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>PSV v4 完全版</title>
+
+  <!-- Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.124/build/three.min.js"></script>
+
+  <!-- 依存ライブラリ -->
+  <script src="https://cdn.jsdelivr.net/npm/uevent@2/browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dot/doT.min.js"></script>
+
+  <!-- Photo-Sphere-Viewer v4 -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.css">
+  <script
+        src="https://cdn.jsdelivr.net/npm/photo-sphere-viewer@4/dist/photo-sphere-viewer.min.js"></script>
+
+  <style>html,body{margin:0;height:100%}#viewer{width:100%;height:100%}</style>
+</head>
+<body>
+  <div id="viewer"></div>
+
+  <script>
+    /* ★ ここを .Viewer にする！ */
+    new PhotoSphereViewer.Viewer({
+      container : document.getElementById('viewer'),
+      panorama  : 'SD12F.jpg',
+      loadingTxt: 'ロード中…'
+    });
+  </script>
+</body>
+</html>
